@@ -15,7 +15,7 @@ func main() {
 	fmt.Println("Selamat datang di program hasil test untuk Stamps Indonesia")
 	fmt.Println("Silahkan pilih program yang akan dijalankan (cukup masukkan angka)")
 	for {
-		fmt.Println("1) FizzBuzz bilangan prima")
+		fmt.Println("1) FooBar bilangan prima")
 		fmt.Println("2) Cuaca 5 hari kedepan")
 
 		reader := bufio.NewReader(os.Stdin)
