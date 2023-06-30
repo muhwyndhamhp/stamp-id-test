@@ -64,3 +64,22 @@ Anda dapat menjalankan perintah berikut:
 ```bash
 ./output/linux/stamps-id
 ```
+
+## Menjalankan Program Dari Kode
+
+### Persiapan
+Beberapa program yang perlu diinstall agar dapat menjalankan program langsung dari kode:
+- Go Programming Langugage (https://go.dev/doc/install)
+- VS Code (https://code.visualstudio.com/)
+
+Beberapa program yang perlu diinstall khusus di Windows:
+- Chocolatey (https://chocolatey.org/install)
+- GNU Make (https://community.chocolatey.org/packages/make)
+
+### Menjalankan Program
+Untuk menjalankan program, ikuti langkah berikut:
+- Clone Repository ke local
+- Buka VSCode
+- Buka Folder Repository
+- Buka Sidebar `Run And Debug` (`Cmd + Shift + D` di Mac atau `Ctrl + Shift + D` di Windows / Linux)
+- Tekan `Launch Package
