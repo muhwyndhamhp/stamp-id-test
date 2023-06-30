@@ -31,7 +31,12 @@ func UniquePrintSequence() {
 	length := len(result)
 
 	for i := 0; i < length; i++ {
-		fmt.Printf("%s ", result.Pop())
+		if i+1 < length {
+			fmt.Printf("%s, ", result.Pop())
+		} else {
+			fmt.Printf("%s", result.Pop())
+		}
+
 	}
 }
 

@@ -54,7 +54,7 @@ func RunForecast() {
 
 	fmt.Println("=========")
 	fmt.Printf("Data Ramalan Cuaca untuk Kota: %s (Lat:%f, Long: %f)\n\n", weather.city.Name, weather.city.Coordinate.Lat, weather.city.Coordinate.Long)
-	fmt.Println("Weather Forecast")
+	fmt.Println("Weather Forecast:")
 	for _, wth := range weather.weathers {
 		timeString := wth.DateTime.Format("Mon, 02 Jan 2006")
 		fmt.Printf("%s: %s\n", timeString, wth.Temperature)
