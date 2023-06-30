@@ -82,4 +82,4 @@ Untuk menjalankan program, ikuti langkah berikut:
 - Buka VSCode
 - Buka Folder Repository
 - Buka Sidebar `Run And Debug` (`Cmd + Shift + D` di Mac atau `Ctrl + Shift + D` di Windows / Linux)
-- Tekan `Launch Package
+- Tekan `Launch Package`
