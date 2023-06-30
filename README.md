@@ -16,6 +16,19 @@ Screenshot hasil pengerjaan program cuaca Jakarta 5 hari kedepan
 
 <img src="image-3.png" width="550">
 
+## Limitasi Program
+### Program Foo Bar
+Limitasi:
+- Hanya melihat array dari 1 s/d 100
+- Tidak melihat bilangan imajiner
+
+### Program Open Weather Map
+Limitasi:
+- Waktu cuaca yagn diambil adalah cuaca pukul 13.00 (jam 1 siang).
+- Limitasi API yang hanya bisa melihat forecast menyebabkan jam eksekusi program mempengaruhi hasil.
+- Apabila program dieksekusi sebelum jam 13.00 maka cuaca hari ini akan tercantum.
+- Apabila program dieksekusi setelah jam 13.00 maka cuaca akan dimulai dari hari besoknya.
+
 ## Sebelum Menjalankan Program
 Sebelum menjalankan program, diperlukan 1 variable berupa `API Key` untuk https://openweathermap.org. Demi alasan keamanan, saya tidak akan mencancumkan `API Key` saya dalam repository ini. Untuk mengatur `API Key`. Untuk menambahkan `API Key`, dapat dilakukan langkah-langkah berikut:
 

@@ -77,6 +77,12 @@ func getAPIKey() (string, error) {
 
 }
 
+// Fungsi untuk mengambil data cuaca 5 hari kedepan.
+// Limitasi:
+// - Waktu cuaca yagn diambil adalah cuaca pukul 13.00 (jam 1 siang).
+// - Limitasi API yang hanya bisa melihat forecast menyebabkan jam eksekusi program mempengaruhi hasil.
+// - Apabila program dieksekusi sebelum jam 13.00 maka forecast hari ini akan tercantum.
+// - Apabila program dieksekusi setelah jam 13.00 maka forecast akan dimulai dari hari besoknya.
 func getFiveDayForecast(city, unit string) (*Weather, error) {
 
 	apiKey, err := getAPIKey()
