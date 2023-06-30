@@ -26,7 +26,8 @@ type WeatherPerDay struct {
 }
 
 var (
-	ErrorCityNotFound = errors.New("kota tidak ditemukan")
+	ErrorCityNotFound   = errors.New("kota tidak ditemukan")
+	ErrorAPIKeyNotFound = errors.New("api key not found")
 )
 
 func RunForecast() {
@@ -42,6 +43,9 @@ func RunForecast() {
 	if err != nil {
 		if err == ErrorCityNotFound {
 			fmt.Println("Mohon Maaf, data Kota tidak ditemukan!")
+		} else if err == ErrorAPIKeyNotFound {
+			fmt.Println("Mohon Maaf, API Key tidak ditemukan")
+			fmt.Println("Silahkan lihat README.md untuk tutorial set API Key")
 		} else {
 			log.Fatal(err)
 		}
@@ -57,17 +61,32 @@ func RunForecast() {
 	}
 }
 
-func getFiveDayForecast(city, unit string) (*Weather, error) {
+func getAPIKey() (string, error) {
 	err := godotenv.Load()
+	if err != nil {
+		return "", err
+	}
+
+	apiKey := os.Getenv("OPEN_WEATHER_API_KEY")
+
+	if apiKey == "" {
+		return "", ErrorAPIKeyNotFound
+	}
+
+	return apiKey, nil
+
+}
+
+func getFiveDayForecast(city, unit string) (*Weather, error) {
+
+	apiKey, err := getAPIKey()
 	if err != nil {
 		return nil, err
 	}
 
-	apiKey := os.Getenv("OPEN_WEATHER_API_KEY")
 	if unit == "" {
 		unit = "metric"
 	}
-
 	url := fmt.Sprintf("https://api.openweathermap.org/data/2.5/forecast?q=%s&units=%s&appid=%s", city, unit, apiKey)
 	resp, err := http.Get(url)
 	if err != nil {
