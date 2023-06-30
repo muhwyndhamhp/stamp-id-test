@@ -33,10 +33,12 @@ Anda dapat langsung menjalankan file `stamps-id.exe` yang berada di folder `/out
 .\output\windows\stamps-id.exe
 ```
 ### Mac OS
+Anda dapat menjalankan perintah berikut:
 ```zsh
 ./output/mac/stamps-id
 ```
 ### Linux
+Anda dapat menjalankan perintah berikut:
 ```bash
 ./output/linux/stamps-id
 ```
