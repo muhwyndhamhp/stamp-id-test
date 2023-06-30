@@ -8,9 +8,9 @@ Repository milik Muhammad Wyndham Haryata Permana.
 Program di repository ini bertujuan untuk menjawab 2 pertanyaan yang di lampirkan di email. Jawaban dari kedua pertanyaan tersebut saya rangkum menjadi 1 buat program yang dapat dipilih ketika menjalankan programnya.
 
 ## Screenshot Program
-![Screenshot hasil pengerjaan program FooBar](image.png | width=100)
+![Screenshot hasil pengerjaan program FooBar](image.png|width=100)
 
-![Screenshot hasil pengerjaan program cuaca Jakarta 5 hari kedepan](image-1.png | width=100)
+![Screenshot hasil pengerjaan program cuaca Jakarta 5 hari kedepan](image-1.png|width=100)
 
 ## Sebelum Menjalankan Program
 Sebelum menjalankan program, diperlukan 1 variable berupa `API Key` untuk https://openweathermap.org. Demi alasan keamanan, saya tidak akan mencancumkan `API Key` saya dalam repository ini. Untuk mengatur `API Key`. Untuk menambahkan `API Key`, dapat dilakukan langkah-langkah berikut:
