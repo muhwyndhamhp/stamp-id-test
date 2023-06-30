@@ -10,11 +10,11 @@ Program di repository ini bertujuan untuk menjawab 2 pertanyaan yang di lampirka
 ## Screenshot Program
 Screenshot hasil pengerjaan program FooBar
 
-<img src="image-2.png" width="550">
+<img src="image-4.png" width="550">
 
 Screenshot hasil pengerjaan program cuaca Jakarta 5 hari kedepan
 
-<img src="image-3.png" width="550">
+<img src="image-5.png" width="550">
 
 ## Limitasi Program
 ### Program Foo Bar
