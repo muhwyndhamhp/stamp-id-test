@@ -6,3 +6,12 @@ build:
 dep:
 	go mod tidy
 	GO111MODULE=on go mod vendor
+
+run-windows:
+	./output/windows/stamps-id.exe
+
+run-mac:
+	./output/mac/stamps-id
+
+run-linux:
+	./output/linux/stamps-id
