@@ -10,11 +10,11 @@ Program di repository ini bertujuan untuk menjawab 2 pertanyaan yang di lampirka
 ## Screenshot Program
 Screenshot hasil pengerjaan program FooBar
 
-<img src="image.png" width="550">
+<img src="image-2.png" width="550">
 
 Screenshot hasil pengerjaan program cuaca Jakarta 5 hari kedepan
 
-<img src="image-1.png" width="550">
+<img src="image-3.png" width="550">
 
 ## Sebelum Menjalankan Program
 Sebelum menjalankan program, diperlukan 1 variable berupa `API Key` untuk https://openweathermap.org. Demi alasan keamanan, saya tidak akan mencancumkan `API Key` saya dalam repository ini. Untuk mengatur `API Key`. Untuk menambahkan `API Key`, dapat dilakukan langkah-langkah berikut:
